@@ -1,0 +1,31 @@
+.wrapper {
+  width: 100%;
+  .header {
+    height: 100px;
+    background: beige;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    .nav {
+      background: darkgray;
+      flex: 0 1 300px;
+    }
+    .content {
+      flex: 1;
+      background: khaki;
+    }
+    &:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      clear: both;
+    }
+  }
+
+  .footer {
+    height: 100px;
+    background: silver;
+  }
+}
